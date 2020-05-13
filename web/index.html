@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Tema 7 CadCar</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/styles.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <form action="CadCarServlet" method="GET">
+                <h2>Editor de carros</h2>
+                <label>Numero:</label>
+                <input type="text" name="id">
+                <label>Fabricante:</label>
+                <input type="text" name="factory">
+                <label>Modelo:</label>
+                <input type="text" name="model">
+                <label>Ano:</label>
+                <input type="text" name="year">
+                <label>Categoria:</label>
+                <select name="category">
+                    <option id="padrao">Padrão</option>
+                    <option id="cedan">Cedan</option>
+                    <option id="4x4">4X4</option>
+                </select>
+                <label> CD Player </label>
+                <input type="checkbox" name="cdPlayer">
+                <label> DVD Player</label>
+                <input type="checkbox" name="dvdplayer">
+                <label>Veiculo Disponivel </label>
+                <input type="checkbox" name="available">
+               
+                <label>Selecione a imagem do Carro </label>
+                <input type="file" name="imgCar">
+                
+                <button type="submit">Submeter</button>
+                <button type="submit">fechar</button>
+                
+            </form>
+        </div>
+    </body>
+</html>
